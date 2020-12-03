@@ -9,7 +9,7 @@
     "dev": "run-s generate:intents dev:nuxt",
     "dev:nuxt": "nuxt",
     "export": "cross-env NUXT_BUILD_TARGET=static nuxt generate",
-    "generate:intents": "uniform optimize manifest download --output ./modules/uniform/optimize/intentManifest.json --apiKey $UNIFORM_API_KEY",
+    "generate:intents": "uniform optimize manifest download --output ./modules/uniform/optimize/intentManifest.json --apiKey $UNIFORM_API_KEY && cat ./modules/uniform/optimize/intentManifest.json",
     "start": "nuxt start",
     "test:e2e": "cypress open"
   },
