@@ -14,10 +14,6 @@
   GA_UA_ID='Google Analytics ID (optional)'
   UNIFORM_PACKAGES_TOKEN='Private npm registry token'
 
-# Stores the nuxt cache between builds for faster build time
-[[plugins]]
-  package = "netlify-plugin-cache-nuxt"
-
 
 [build.environment]
   UNIFORM_CLI_BASE_URL='https://uniformapp-dev.s3.amazonaws.com/optimize/'
